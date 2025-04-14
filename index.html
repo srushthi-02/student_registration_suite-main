@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vadiraj">
+    <meta name="keywords" content="student,Registration,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Student Registration suite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <article class="mainPage">
+        <article class="main1">
+            <header>
+                <article id="title">Student Registration suite</article>
+                <article id="description">A straightforward system that captures student details, registers them, and
+                    displays the list of registered students in a clear, table format.</article>
+            </header>
+            <br />
+            <main>
+                <form id="studentForm">
+                    <article id="input1">
+                        <label for="studentName">Student Name:</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </article>
+                    <br />
+                    <article id="input2">
+                        <label for="studentId">Student Id:</label>
+                        <input type="text" id="studentId" name="studentId" required pattern="\d{6}" maxlength="6"
+                            title="ID number should be exactly 6 digits.">
+
+                    </article>
+                    <br />
+                    <article id="input3">
+                        <label for="Emailid">Email ID:</label>
+                        <input type="email" id="Emailid" name="Emailid" required
+                            title="Please enter a valid email address (e.g., example@domain.com)">
+                    </article>
+                    <br />
+                    <article id="input4">
+                        <label for="contactNo">Contact No:</label>
+                        <input type="text" id="contactNo" name="contactNo" required pattern="\d{10}" maxlength="10"
+                            title="Contact number should be exactly 10 digits.">
+                    </article>
+
+
+
+                </form>
+                <article id="input5">
+
+                    <input type="button" id="submit" value="Submit" />
+                </article>
+                <article class="addList">
+
+                </article>
+
+            </main>
+            <footer>
+                <p><i class="fa-regular fa-copyright"></i> 2024 Student Registration suite. All rights reserved.</p>
+            
+                <p id="foot_para">Designed and developed by Vadiraj. 
+                    <a id="gitlogo" href="https://github.com/Vadiraj-19/student_registration_suite" target="_blank"></a>
+                </p>
+            </footer>
+            
+
+        </article>
+        <article class="main2">
+            <section class="hero_image">
+
+
+
+            </section>
+
+
+        </article>
+    </article>
+    <article id="secondayPage">
+
+
+        <table id="mainrow">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Contact No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- JavaScript will insert rows here -->
+            </tbody>
+        </table>
+        </article>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "BodoniModaSC", "JetBrainsMono";
+    src: url(./BodoniModaSC-VariableFont_opsz\,wght.ttf);
+    src: url(./JetBrainsMono-VariableFont_wght.ttf);
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+
+}
+.mainPage{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+
+
+}
+
+header {
+    position: absolute;
+    top: 10px;
+}
+
+.main1 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(240, 236, 236);
+
+}
+
+.main2 {
+
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+
+
+
+
+}
+
+.hero_image {
+   
+    background: url('./image/upscaled_image_8k.png') top/cover no-repeat;
+    background-position:bottom left center;
+    width:  90%;
+    height: 70%;
+    /* Adjust as needed */
+    
+    
+    -webkit-mask-image: url("./image/mask-26.svg");
+    background-color: white;
+    mask-image: url("./image/mask-26.svg");
+    -webkit-mask-size: 900px 500px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+    
+    
+
+
+}
+
+
+
+
+#title {
+    font-family: "BodoniModaSC";
+    font-size: 70px;
+    text-shadow: 5px 5px 2px grey;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+#description {
+    font-family: "JetBrainsMono";
+    font-size: larger;
+    margin-left: 15px;
+    padding-left: 15px;
+
+}
+
+form {
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgb(203, 203, 203);
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 25px 20px 15px grey;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form article {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit {
+
+    font-size: medium;
+    padding: 2px 20px;
+    margin-top: 35px;
+
+    border-radius: 5px;
+
+
+}
+
+#submit:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 6px 6px 5px rgb(59, 59, 59);
+
+}
+
+footer {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: "JetBrainsMono";
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+#secondayPage {
+    z-index: 0;
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(240, 236, 236);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    
+}
+/* Main table styling */
+#mainrow {
+    position: relative;
+    top: 40px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+/* Header styling */
+thead {
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+/* Header cells */
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid black;
+    white-space: nowrap;
+}
+
+/* Rounded corners for the header */
+th:nth-child(1) {
+    border:none;
+    border-radius: 10px 0 0 0;
+    border-bottom: 1px solid black;
+    
+}
+
+th:last-child {
+    border:none;
+    border-radius: 0 10px 0 0;
+    border-bottom: 1px solid black;
+}
+
+/* Table body styling */
+tbody {
+    background-color: rgb(183, 183, 183);
+    color: black;
+}
+td:last-child{
+    background-color:rgb(240, 236, 236);
+    border: none;
+}
+td:nth-last-child(2){
+    background-color:rgb(240, 236, 236);
+    border: none;
+}
+tbody tr:last-child td:nth-last-child(3){
+    border:none; 
+    border-radius: 0 0 10px 0;
+    border-bottom: 1px solid black;
+}
+tbody td button{
+    border: none;
+}
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: rgb(200, 200, 200);
+
+}
+
+/* Rounded bottom corners on the last row's cells */
+tbody tr:last-child td:first-child {
+    border:none;
+    border-radius: 0 0 0 10px;
+    border-bottom: 1px solid black;
+    
+
+}
+
+
+.error-message{
+    color:red;
+    font-size:small;
+}
+
+#gitlogo {
+    display: inline-block; /* Ensure it shows as a block so width/height apply */
+    width: 30px;
+    height: 30px;
+    background-image: url("https://w7.pngwing.com/pngs/12/369/png-transparent-black-and-white-cat-illustration-github-computer-icons-icon-design-github-cat-like-mammal-carnivoran-logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    border-radius: 50%;
+}
+
+#gitlogo:hover{
+    transform: scale(1.2);
+}
+#foot_para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
